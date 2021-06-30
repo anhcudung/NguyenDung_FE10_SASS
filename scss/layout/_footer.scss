@@ -1,0 +1,35 @@
+footer{
+    justify-content: space-between;
+    
+    position: relative;
+   color: white;
+    .container{
+        position: absolute;
+        margin-left: 250px;
+        top: 400px;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    .btNewsletterColumn{
+        input{
+            background-color:$color-1;
+            border-radius: 20px;
+            border-color: transparent;
+            padding: 3px 50px 3px 0;
+            color: white;
+        }
+    }
+    .btNewsletterButton{
+        input{
+            margin-top: 10px;
+            background-color:white;
+            border-radius: 20px;
+            border-color: transparent;
+            padding: 3px 50px 3px 50px;
+        }
+    }
+}

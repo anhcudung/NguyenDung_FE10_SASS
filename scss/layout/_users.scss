@@ -1,0 +1,50 @@
+.users {
+  #img2 {
+    background-color: $color-2;
+  }
+  position: relative;
+  .userlist {
+    position: absolute;
+    top: 300px;
+    .item {
+      border-radius: 50px;
+      .profile {
+        background-color: white;
+        text-align: center;
+        border-radius: 0 0 50px 50px;
+        &:hover {
+          box-shadow: 0 2px 4px $color-white-2;
+        }
+      }
+
+      h5,
+      p {
+        color: $color-1;
+      }
+      &:hover {
+        box-shadow: 0 2px 4px $color-white-2;
+        &::after {
+          img {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+    img {
+      border-radius: 50px 50px 0 0;
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+.row {
+  padding: 0 120px;
+}
+
+@include responsive("small-down") {
+  .products {
+    width: 90%;
+  }
+}

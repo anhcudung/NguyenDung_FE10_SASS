@@ -1,0 +1,63 @@
+header {
+    nav{
+        #collapsibleNavbar {
+            margin-right: 50px;
+            color: black;
+            .nav-link {
+                @include styleText($fs-2, $fw-2, $color-blue-1);
+                padding: 25px;
+                transition: 0.2s;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    display: block;
+                    background-color: $color-blue-2;
+                    transform: scaleX(0);
+                    transition: 0.2s;
+                }
+                &:hover {
+                    @include styleText($fs-2, $fw-2, $color-blue-2);
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+
+        a{
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+        }
+        
+        .titleright{
+            p{
+                background-color: $color-1;
+                border-radius: 16px;
+                color: white;
+                padding: 5px 15px 10px 15px;
+                
+                &:hover {
+                    border: 1px solid $color-1;
+                    background-color: white;
+                    color: black;
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+            i{
+                margin-top: 10px;
+                margin-left: 5px;
+                &:hover {
+                    color: $color-1;
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+            
+        }
+    }
+}
